@@ -20,8 +20,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
     <a href="doverview.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Dungeons</a>
-    <a href="builds.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Builds</a>
-    <a href="consumables.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Consumables</a>
+    <div class="w3-dropdown-hover">
+        <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Builds</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-padding-large">
+          <a href="elementalist.html" class="w3-bar-item w3-button">Elementalist</a>
+          <a href="mesmer.html" class="w3-bar-item w3-button">Mesmer</a>
+          <a href="necromancer.html" class="w3-bar-item w3-button">Necromancer</a>
+          <a href="engineer.html" class="w3-bar-item w3-button">Engineer</a>
+          <a href="ranger.html" class="w3-bar-item w3-button">Ranger</a>
+          <a href="thief.html" class="w3-bar-item w3-button">Thief</a>
+          <a href="guardian.html" class="w3-bar-item w3-button">Guardian</a>
+          <a href="warrior.html" class="w3-bar-item w3-button">Warrior</a>
+          <a href="revenant.html" class="w3-bar-item w3-button">Revenant</a>
+        </div>
+      </div>
+      <a href="consumables.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Consumables</a>
   </div>
 
   <!-- Navbar on small screens -->
@@ -123,8 +136,38 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
-
 </div>
+</div>
+
+<!-- Spacer-->
+<div class="w3-row-padding w3-white w3-padding-32 w3-container">
+</div>
+
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Dungeons are cool <3</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xsmall w3-padding-32">
+    <t>made with love by: Tuaab(guides), SpatiumPrinceps.8927(development & guides)</t>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
 
 </body>
 </html>
