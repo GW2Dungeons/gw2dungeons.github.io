@@ -39,6 +39,7 @@
 .container .btn0:hover{
     background-color: white;
     color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .container .btn1 {
@@ -59,6 +60,7 @@
 .container .btn1:hover{
     background-color: white;
     color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .container .btn2 {
@@ -79,6 +81,7 @@
 .container .btn2:hover{
     background-color: white;
     color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .container .btn3 {
@@ -99,9 +102,8 @@
 .container .btn3:hover{
     background-color: white;
     color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
-
 
 .collapsible {
     background-color: #777;
@@ -124,4 +126,13 @@
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
+}
+
+
+.portal {
+    background-image: url("https://wiki.guildwars2.com/images/8/81/Portal_Entre.png");
+    background-position: center center;
+    height: 24px;
+  line-height: 24px;
+  width: 24px;
 }
