@@ -1,0 +1,102 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+ float: left;
+ width: 50%;
+ padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+ content: "";
+ clear: both;
+ display: table;
+}
+/* Container needed to position the button. Adjust the width as needed */
+.container {
+ position: relative;
+ width: 100%;
+}
+
+/* Make the image responsive */
+.container img {
+ width: 100%;
+ height: auto;
+}
+.container .btn0 {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    font-size: 24px;
+    padding: 12px 24px;
+    width: 30%;
+}
+.container .btn0:hover{
+    background-color: white;
+    color: black;
+}
+
+.container .btn1 {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    font-size: 24px;
+    padding: 12px 24px;
+    width: 30%;
+}
+
+.container .btn1:hover{
+    background-color: white;
+    color: black;
+}
+
+.container .btn2 {
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    font-size: 24px;
+    padding: 12px 24px;
+    width: 30%;
+}
+
+.container .btn2:hover{
+    background-color: white;
+    color: black;
+}
+
+.container .btn3 {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-align: left;
+    font-size: 24px;
+    padding: 12px 24px;
+    width: 30%;
+}
+
+.container .btn3:hover{
+    background-color: white;
+    color: black;
+}
