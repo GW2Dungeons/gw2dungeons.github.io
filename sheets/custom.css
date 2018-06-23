@@ -127,12 +127,3 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
-
-
-.portal {
-    background-image: url("https://wiki.guildwars2.com/images/8/81/Portal_Entre.png");
-    background-position: center center;
-    height: 24px;
-  line-height: 24px;
-  width: 24px;
-}

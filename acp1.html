@@ -7,20 +7,39 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"><style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
-.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee {font-size:200px}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lato", sans-serif
+  }
+
+  .w3-bar,
+  h1,
+  button {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .fa-anchor,
+  .fa-coffee {
+    font-size: 200px
+  }
 </style>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
-    <a href="doverview.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Dungeons</a>
-    <div class="w3-dropdown-hover">
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+      <a href="doverview.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">Dungeons</a>
+      <div class="w3-dropdown-hover">
         <button class="w3-button w3-hide-small w3-padding-large w3-hover-white">Builds</button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-padding-large">
           <a href="elementalist.html" class="w3-bar-item w3-button">Elementalist</a>
@@ -35,61 +54,182 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
         </div>
       </div>
       <a href="consumables.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Consumables</a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Dungeons</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Builds</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">Consumables</a>
+    </div>
   </div>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Dungeons</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Builds</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Consumables</a>
+  <!-- Header -->
+  <header class="w3-container w3-black w3-center" style="padding:64px 16px">
+    <h1 class="w3-margin w3-jumbo">Ascalonian Catacombs</h1>
+    <p class="w3-xlarge">Path 1 (Hodgins)</p>
+  </header>
+
+  <!-- Dungeon guide-->
+  <button class="collapsible w3-blue">Path to spider</button>
+  <div class="content">
+    <div class="w3-padding-32 w3-container">
+      <section class="w3-content">
+        <section class="w3-large">
+          <p>Everyone rushs to the spider as fast as possible. <br></p>
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-blue" onclick="openClass(event,'Chrono', 0)">Chrono</button>
+          </div>
+
+          <div id="Chrono" class="w3-container w3-border role0">
+            <p> One dungeoneer, preferable the chrono drops a portal (Pic.1) here to get back quickly and activate the path selection.
+            </p>
+            <img src="img/acp1/portal1.png" alt="First portal spot">
+          </div>
+
+        </section>
+      </section>
+    </div>
   </div>
-</div>
 
-<!-- Header -->
-<header class="w3-container w3-black w3-center" style="padding:64px 16px">
-  <h1 class="w3-margin w3-jumbo">Ascalonian Catacombs</h1>
-  <p class="w3-xlarge">Path 1 (Tzark)</p>
-</header>
+  <button class="collapsible w3-blue">Spider</button>
+  <div class="content">
+    <div class="w3-padding-32 w3-container">
+      <section class="w3-content">
+        <section class="w3-large">
+          <p>Focus the small level 1 spiders. As soon as all small spiders are killed, the boss spider will appear on a fixed spot. <br></p>
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-blue" onclick="openClass(event,'Chrono1', 1)">Chrono</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openClass(event,'Guardian1', 1)">Guardian</button>
+          </div>
 
-<div class="w3-row-padding w3-padding-64 w3-container">
-  <div class="w3-content">
-      <div class="w3-twothird">
-          <p> Everyone move as fast as possible to the spider </p>
-          <i class=" portal"></i>
-      </div>
+          <div id="Chrono1" class="w3-container w3-border role1">
+            <p> Coordinate yourself with your chrono and/or other guardians for reflections! One feedback or wall is enough.<br> Don't forget to open your portal to select the path.
+            </p>
+          </div>
+          <div id="Guardian1" class="w3-container w3-border role1" style="display:none">
+            <p> Coordinate yourself with your chrono and/or other guardians for reflections! One feedback or wall is enough. <br> If you are not taking reflections make sure to take "Stand your ground" for the mobs afterwards</p>
+          </div>
 
+        </section>
+      </section>
+    </div>
   </div>
-</div>
 
-<!-- Spacer-->
-<div class="w3-row-padding w3-white w3-padding-32 w3-container">
-</div>
+  <button class="collapsible w3-blue">Mobgroup after spider</button>
+  <div class="content">
+    <div class="w3-padding-32 w3-container">
+      <section class="w3-content">
+        <section class="w3-large">
+          <p>In optimal runs this mobgroup is most likely skipped. Killing them won't cost a lot of time, so unless you are going full tryhard, just kill them.<br> Decide if you want to reduce risk of someone dying by letting the chrono portal the party
+            through the trap part or stealth up.
+          </p>
+          <p>After you passed the trap part, chrono takes the left way and wait in front of the door. Keep a blink and portal ready. A second chrono/whitemantleportal may be opend on the staircase to kohler by one of the four dps running to the burrow part.<br>            Double portal greatly increases the movement speed across the dungeon, due to not having a waypoint at kohler.</p>
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-blue" onclick="openClass(event,'Chrono2', 2)">Chrono</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openClass(event,'Guardian2', 2)">Guardian</button>
+          </div>
+
+          <div id="Chrono2" class="w3-container w3-border role2">
+            <p>In case you are skipping, make sure to use mimic before opening portal, because you will need the portal soon again.</p>
+          </div>
+          <div id="Guardian2" class="w3-container w3-border role2" style="display:none">
+            <p>In case you are killing, pop your stability.</p>
+          </div>
+
+        </section>
+      </section>
+    </div>
+  </div>
+
+  <button class="collapsible w3-blue">Burrows</button>
+  <div class="content">
+    <div class="w3-padding-32 w3-container">
+      <section class="w3-content">
+        <section class="w3-large">
+          <p>When you arrive, you are only three people, since the fourth is dropping a portal. Send two dps to the left part and let the dragonhunter stay on right part.
+          </p>
+          <p>After you are finished with the burrows, get OOC as fast as possible (remove condis etc), let someone portal to the new waypoint and trigger the next event at the tombstone.<br> Open the first portal to kohlers staircase. Run to your chrono.
+            <div class="w3-bar w3-black">
+              <button class="w3-bar-item w3-button tablink w3-blue" onclick="openClass(event,'Chrono3', 3)">Chrono</button>
+              <button class="w3-bar-item w3-button tablink" onclick="openClass(event,'Guardian3', 3)">Guardian</button>
+            </div>
+
+            <div id="Chrono3" class="w3-container w3-border role3">
+              <p>Drop a portal on the bridge. As soon as the door opens, rush forward and blink up.</p>
+            </div>
+            <div id="Guardian3" class="w3-container w3-border role3" style="display:none">
+              <p>You can predrop your traps right when you arrive. Stack might with staff before the first burrow appears for maximum burst.</p>
+            </div>
+        </section>
+      </section>
+    </div>
+  </div>
 
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Dungeons are cool <3</h1>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">
-  <div class="w3-xsmall w3-padding-32">
-    <t>made with love by: Tuaab(guides), SpatiumPrinceps.8927(development & guides)</t>
- </div>
-</footer>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
     }
-}
-</script>
+    // This functions manages the correct display of the class selection custom role tab menu
+    // It is important to add an incrementing number as t and make the divs, which should be "switched" in the tab menu role+t
+    function openClass(evt, roleName, t) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("role" + t)
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-blue", "");
+      }
+      document.getElementById(roleName).style.display = "block";
+      evt.currentTarget.className += " w3-blue";
+    }
+  </script>
+
+  <!-- Spacer-->
+  <div class="w3-row-padding w3-white w3-padding-32 w3-container">
+  </div>
+
+
+  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Dungeons are cool <3</h1>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
+    <div class="w3-xsmall w3-padding-32">
+      <t>made with love by: Tuaab(guides), SpatiumPrinceps.8927(development & guides)</t>
+    </div>
+  </footer>
+
+  <script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
 
 
 
 </body>
+
 </html>
